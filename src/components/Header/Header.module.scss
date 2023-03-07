@@ -1,0 +1,17 @@
+@import '../../styles/__vars';
+
+.header{
+    background: $azul-escuro;
+    padding: 32px 24px;
+    
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        width: 234px;
+        height: 64px;
+        background-image: url(../../assets/logo-mobile.png);
+    }
+}

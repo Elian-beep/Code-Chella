@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
 import Experience from './pages/Experience';
 import Home from './pages/Home';
 import Info from './pages/Info';
@@ -10,14 +11,14 @@ export default function AppRouter() {
   return (
     <main className='container'>
       <Router>
-        {/* HEADER */}
+        <Header />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='experience' element={<Experience />} />
           <Route path='map' element={<Map />} />
           <Route path='info' element={<Info />} />
           <Route path='ticket' element={<Ticket />} />
-          <Route path='acquired' element={<Acquired />} />
+          <Route path='acquired' element={<Acquired />} /> {/* AQUIRED DEVE IR DENTRO DE TICKET */}
         </Routes>
       </Router>
     </main>
