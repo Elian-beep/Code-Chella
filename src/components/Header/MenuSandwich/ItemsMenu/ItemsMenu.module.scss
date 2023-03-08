@@ -1,0 +1,23 @@
+@import '../../../../styles/__vars';
+
+.items{
+    padding: 16px;
+    background: $blue-bold;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+
+    &__item{
+        font-weight: 700;
+        font-family: 'Raleway';
+        font-size: 20px;
+        color: $white;
+    }
+}
+
+.bar{
+    width: 100%;
+    border: 1px solid $white;
+}

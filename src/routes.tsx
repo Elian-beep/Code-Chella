@@ -20,6 +20,7 @@ export default function AppRouter() {
           <Route path='ticket' element={<Ticket />} />
           <Route path='acquired' element={<Acquired />} /> {/* AQUIRED DEVE IR DENTRO DE TICKET */}
         </Routes>
+        {/* RODAPÉ */}
       </Router>
     </main>
   );

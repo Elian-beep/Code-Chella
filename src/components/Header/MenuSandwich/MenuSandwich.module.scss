@@ -1,0 +1,53 @@
+@import '../../../styles/_vars';
+
+.menuSandwich {
+    padding: 24px 16px;
+
+    &__button {
+        display: absolute;
+        display: none;
+
+        &:checked + label span:nth-child(1){
+            transform: rotate(-45deg);
+            top: 8px;
+        }
+        &:checked + label span:nth-child(2){
+            opacity: 0;
+        }
+        &:checked + label span:nth-child(3){
+            transform: rotate(45deg);
+            top: 8px;
+        } 
+    }
+
+
+    &__icon {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+
+        &__part {
+            position: absolute;
+            display: block;
+            height: 3px;
+            width: 100%;
+            border-radius: 30px;
+            background: $white;
+            transition: 0.25s ease-in-out;
+        }
+
+        span:nth-child(1) {
+            top: 0;
+        }
+
+        span:nth-child(2) {
+            top: 8px;
+        }
+
+        span:nth-child(3) {
+            top: 16px;
+        }
+    }
+}
