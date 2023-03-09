@@ -6,6 +6,7 @@ type Props = {
 }
 export default function MenuSandwich({ onCheckboxChange }: Props) {
     const [isChecked, setIsChecked] = useState(false);
+    
     const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const isChecked = event.target.checked;
         setIsChecked(isChecked);

@@ -1,10 +1,28 @@
 @import '../../styles/__vars';
+@import '../../styles/_breakpoints';
 
-.header {
+.header{
+    background: $blue-bold;
+    
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        background: $blue-bold;
+    }
+}
+
+.container {
     background: $blue-bold;
     padding: 32px 24px;
 
-    &__container {
+    @media (min-width: $tablet) {
+        padding: 0;
+        padding-top: 32px;
+    }
+
+    &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -18,8 +36,9 @@
 }
 
 .navbar {
+    // opacity: 0;
     transition-property: all;
-    transition-duration: 400ms;
+    transition-duration: 200ms;
     transition-timing-function: ease-out;
     position: absolute;
     right: -193px;

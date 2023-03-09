@@ -1,4 +1,32 @@
 @import '../../../../styles/__vars';
+@import '../../../../styles/_breakpoints';
+
+.navbar {
+    position: relative;
+    max-width: 100vw;
+
+    @media (min-width: $tablet) {
+        padding-bottom: 32px; 
+    }
+}
+
+.menu{
+    transition-property: all;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    position: absolute;
+    left: -100%;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+        position: sticky;   
+    }
+}
+
+.isCheckedOpen {
+    left: 0;
+    z-index: 9;
+}
 
 .items{
     padding: 16px;
@@ -6,18 +34,31 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
     align-items: center;
+
+    @media (min-width: $tablet) {
+        flex-direction: row;   
+        gap: 32px;
+    }
 
     &__item{
         font-weight: 700;
         font-family: 'Raleway';
         font-size: 20px;
         color: $white;
+
+        @media (min-width: $tablet) {
+            
+        }
     }
 }
 
 .bar{
     width: 100%;
     border: 1px solid $white;
+
+    @media (min-width: $tablet) {
+        display: none;  
+    }
 }

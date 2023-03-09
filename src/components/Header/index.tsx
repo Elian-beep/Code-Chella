@@ -9,20 +9,18 @@ export default function Header() {
     const [isMenu, setIsMenu] = useState(false);
     const handleMenuChange = (isMenu: boolean) => {
         setIsMenu(isMenu);
-        // console.log(`Sandwich open: ${isChecked}`);
+        console.log(`Sandwich open: ${isMenu}`);
     }
 
     return (
-        <>
-            <header className={styles.header}>
-                <div className={styles.header__container}>
-                    <div onClick={() => navigate('/')} className={styles.header__logo}></div>
+        <header className={styles.header}>
+            <div className={styles.container}>
+                <div className={styles.container__content}>
+                    <div onClick={() => navigate('/')} className={styles.container__logo}></div>
                     <MenuSandwich onCheckboxChange={handleMenuChange} />
                 </div>
-            </header>
-            <nav className={`${styles.navbar} ${isMenu ? styles.isCheckedOpen : styles.isCheckedClosed} `}>
-                <ItemsMenu onRedirectChange={handleMenuChange} />
-            </nav>
-        </>
+            </div>
+            <ItemsMenu openMenu={isMenu} />
+        </header>
     );
 }
