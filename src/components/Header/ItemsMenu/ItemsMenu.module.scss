@@ -1,5 +1,5 @@
-@import '../../../../styles/__vars';
-@import '../../../../styles/_breakpoints';
+@import '../../../styles/__vars';
+@import '../../../styles/_breakpoints';
 
 .navbar {
     position: relative;
@@ -7,6 +7,10 @@
 
     @media (min-width: $tablet) {
         padding-bottom: 32px; 
+    }
+
+    @media (min-width: $laptop) {
+        padding: 32px 120px;
     }
 }
 
@@ -36,6 +40,7 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
+    cursor: pointer;
 
     @media (min-width: $tablet) {
         flex-direction: row;   
@@ -47,6 +52,12 @@
         font-family: 'Raleway';
         font-size: 20px;
         color: $white;
+        transition: color .1s ease-in-out;
+        
+        &:hover{
+            color: $gray;
+        }
+    
 
         @media (min-width: $tablet) {
             

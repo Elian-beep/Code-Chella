@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Header.module.scss';
 import MenuSandwich from './MenuSandwich';
-import ItemsMenu from './MenuSandwich/ItemsMenu';
+import ItemsMenu from './ItemsMenu';
 
 export default function Header() {
     const navigate = useNavigate();

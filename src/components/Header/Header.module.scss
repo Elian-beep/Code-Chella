@@ -1,15 +1,20 @@
 @import '../../styles/__vars';
 @import '../../styles/_breakpoints';
 
-.header{
+.header {
     background: $blue-bold;
-    
+
     @media (min-width: $tablet) {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 32px;
         background: $blue-bold;
+    }
+
+    @media (min-width: $laptop) {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -22,6 +27,10 @@
         padding-top: 32px;
     }
 
+    @media (min-width: $laptop) {
+        padding: 32px 120px;
+    }
+
     &__content {
         display: flex;
         justify-content: space-between;
@@ -31,8 +40,14 @@
     &__logo {
         width: 234px;
         height: 64px;
-        background-image: url(../../assets/logo-mobile.png);
+        background-image: url(../../assets/logo-mobile.svg);
+        cursor: pointer;
+
+        @media (min-width: $tablet) {
+            background-image: url(../../assets/logo-tablet.svg);
+        }
     }
+
 }
 
 .navbar {
