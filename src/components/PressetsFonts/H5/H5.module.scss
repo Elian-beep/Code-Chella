@@ -1,0 +1,10 @@
+@import '../../../styles/_vars';
+@import '../../../styles/_breakpoints';
+
+.text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: $gray;
+}

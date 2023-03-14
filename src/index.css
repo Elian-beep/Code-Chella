@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +9,10 @@
 
 body{
   font-family: 'Raleway', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #root > main.container{
