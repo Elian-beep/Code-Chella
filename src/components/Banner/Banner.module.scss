@@ -2,7 +2,7 @@
 @import '../../styles/_breakpoints';
 
 .banner {
-    max-height: 270px;
+    height: 270px;
     max-width: 100vw;
     
     &__img{
@@ -15,6 +15,6 @@
     }
 
     @media (min-width: $laptop) {
-        max-height: 407px;
+        height: 407px;
     }
 }

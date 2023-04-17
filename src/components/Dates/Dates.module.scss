@@ -1,0 +1,61 @@
+@import '../../styles/_vars';
+@import '../../styles/_breakpoints';
+
+.dates {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 24px;
+
+    @media (min-width: $tablet) {
+        padding: 32px 60px;
+    }
+
+    @media (min-width: $laptop) {
+        padding: 64px 120px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+    }
+
+    &__banner {
+        width: 312px;
+        height: 381px;
+        background-image: url(../../assets/banner_pessoas-mobile.png);
+        background-repeat: no-repeat;
+        align-self: center;
+
+        @media (min-width: $tablet) {
+            width: 609px;
+            background-image: url(../../assets/banner_pessoas-tablet.png);
+        }
+
+        @media (min-width: $laptop) {
+            background-image: url(../../assets/banner_pessoas-desktop.png);
+            width: 609px;
+        }
+    }
+
+    &__boxText {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @media (min-width: $laptop) {
+            width: 540px;
+        }
+
+        & p {
+            font-family: 'Raleway';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        &__btn{
+
+        }
+    }
+}
