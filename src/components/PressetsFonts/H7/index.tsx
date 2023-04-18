@@ -1,7 +1,11 @@
 import styles from './H7.module.scss';
 
-export default function H7(){
+interface Props{
+    text: string
+}
+
+export default function H7(props: Props){
     return(
-        <h6 className={styles.text}>Teste</h6>
+        <h6 className={styles.text}>{props.text}</h6>
     );
 }

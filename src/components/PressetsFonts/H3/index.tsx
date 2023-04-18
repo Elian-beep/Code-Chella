@@ -1,7 +1,11 @@
 import styles from './H3.module.scss';
 
-export default function H3(){
+interface Props{
+    text: string
+}
+
+export default function H3(props: Props){
     return(
-        <h3 className={styles.text}>Teste</h3>
+        <h3 className={styles.text}>{props.text}</h3>
     );
 }

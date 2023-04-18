@@ -1,7 +1,11 @@
 import styles from './H2.module.scss';
 
-export default function H2(){
+interface Props{
+    text: string
+}
+
+export default function H2(props: Props){
     return(
-        <h2 className={styles.text}>Teste</h2>
+        <h2 className={styles.text}>{props.text}</h2>
     );
 }

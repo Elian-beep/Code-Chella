@@ -1,6 +1,5 @@
 import H6 from 'components/PressetsFonts/H6';
 import styles from './Dates.module.scss';
-import banner_pessoas from '../../assets/banner_pessoas-mobile.png';
 import ButtonDefault from 'components/ButtonDefault';
 import { ReactComponent as icon_ticket } from '../../assets/icon_ticket.svg';
 

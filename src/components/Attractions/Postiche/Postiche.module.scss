@@ -1,0 +1,41 @@
+@import '../../../styles/_breakpoints';
+@import '../../../styles/_vars';
+
+.container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    width: 100%;
+}
+
+.line {
+    @media (min-width: $tablet) {
+        flex: 1;
+        height: 2px;
+        margin: 0 10px;
+        border-bottom: 2px solid $mustard;
+        position: relative;
+
+        &::before,
+        ::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            max-width: 10px;
+            height: 2px;
+            background-color: $mustard;
+        }
+
+        &::before {
+            left: -20px;
+        }
+    }
+
+}
+
+.content {
+    padding: 16px;
+    text-align: center;
+    background: $mustard;
+    display: inline-block;
+}
